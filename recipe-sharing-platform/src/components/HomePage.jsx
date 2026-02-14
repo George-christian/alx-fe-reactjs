@@ -15,6 +15,17 @@ const HomePage = () => {
         🍲 Recipe Sharing Platform
       </h1>
 
+      {/* Link to Add Recipe Form */}
+      <div className="flex justify-center mb-6">
+        <Link
+          to="/add-recipe"
+          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition"
+        >
+          + Add New Recipe
+        </Link>
+      </div>
+
+      {/* Grid of Recipes */}
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {recipes.map((recipe) => (
           <div
